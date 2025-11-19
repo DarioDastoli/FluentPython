@@ -1,0 +1,12 @@
+Since i know that the tuples are immutable, i can define an order and work with the order of the items.
+
+Like in the case of the example 2.7 --> city, year, pop, chg, area = ('Tokyo', 2003, 32_450, 0.66, 8014)
+
+A tuple is immutable, but the referenced elements inside a tuple can change.
+
+i can use hash bilt-in to create a function to check the mutability of the elements inside a tuple like in the file tuples.py
+
+
+Tuples have some performance advantages over lists.
+
+Tuples and list have the same api except for the __reversed__ method
