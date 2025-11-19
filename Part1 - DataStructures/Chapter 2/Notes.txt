@@ -10,3 +10,12 @@ i can use hash bilt-in to create a function to check the mutability of the eleme
 Tuples have some performance advantages over lists.
 
 Tuples and list have the same api except for the __reversed__ method
+
+The _ symbol is special in patterns: it matches the element that will be found in that position, but it will never be bound to that element. It also can appear more than once in a patterns
+
+When destructuring i can bind any part of a pattern with a variable using 'as' kewyword
+I can also add type information
+
+* matches any number and type of items.
+*extra binds all elements to extra while *_ does not bind them.
+
