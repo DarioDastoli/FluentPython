@@ -10,3 +10,14 @@ i can use hash bilt-in to create a function to check the mutability of the eleme
 Tuples have some performance advantages over lists.
 
 Tuples and list have the same api except for the __reversed__ method
+
+
+Avoid putting mutable items in tuples.
+Augmented assignment is not an atomic operation
+Inspecting Python bytecode is not too difficult, and can be helpful to see what is going on under the hood. 
+
+functions or methods that change an object in place should return None to make it clear to the caller that the receiver was changed, 
+and no new object was created.
+
+The convention of returning None to signal in-place changes has a
+drawback: we cannot cascade calls to those methods.
